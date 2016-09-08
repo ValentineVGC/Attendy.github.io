@@ -1,0 +1,16 @@
+#Latitude{-webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */ 
+  pointer-events: none; 
+  opacity: 0.5;
+}
+
+#Longitude{
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;   
+  pointer-events: none; 
+  opacity: 0.5;       /* Likely future */ 
+}
