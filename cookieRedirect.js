@@ -9,7 +9,7 @@ var RedirectURL = "index2.html";
 //    the visitor's browser (0 means remove 
 //    cookie whenever browser closes)?
 
-var DaysToLive = "7";
+var DaysToLive = "0";
 
 // 3. What name shall the cookie have (any 
 //    sequence of alphabetical characters 
