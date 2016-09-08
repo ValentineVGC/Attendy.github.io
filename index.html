@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <script type="text/javascript" src="cookieRedirect.js"></script>
+  </head>
+
+  <body>
+    <!-- Contact Form - sent to a Google Sheet -->
+    <form id='foo'>
+      <p>
+        <label>Name</label>
+        <input id='Name' name='Name' type='text'>
+      </p><p>
+        <label>Student ID</label>
+        <input id='SID' name='SID' type='number'>
+      </p><p>
+        <label>Code</label>
+        <input id='Code' name='Code' type='number'>
+      </p>
+        <div id='success'></div>
+
+<script type="text/javascript"> 
+ function getLocationConstant()
+{
+    if(navigator.geolocation)
+    {
+        navigator.geolocation.getCurrentPosition(onGeoSuccess,onGeoError);  
+    } else {
+        alert("Your browser or device doesn't support Geolocation");
+    }
+}
+
+// If we have a successful location update
+function onGeoSuccess(event)
+{
+    document.getElementById("Latitude").value =  event.coords.latitude; 
+    document.getElementById("Longitude").value = event.coords.longitude;
+
+}
+
+// If something has gone wrong with the geolocation request
+function onGeoError(event)
+{
+    alert("Error code " + event.code + ". " + event.message);
+}
+ </script>
+
+<br>
+ <cfform action="gps2.cfm" method="post">
+ Latitude: <input type="text" id="Latitude" name="Latitude" value="">
+ <br><br>
+ Longitude: <input type="text" id="Longitude" name="Longitude" value="">
+ <br><br>
+ <input type="button" value="Get Location" onclick="getLocationConstant()"/>
+ <br><br>
+ </cfform>
+         <button type='submit' onclick="location.href='index2.html'" >Send</button>
+       </form>
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src='google-sheet.js'></script>
+</html>
