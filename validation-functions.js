@@ -85,20 +85,14 @@ $(document).ready(function() {
                     },
                 }
             },
-            'Latitude': {
-                validators: {
-                    notEmpty: {
-                        message: "Please verify your location."
-                    }
-                }
-            },
-            'Longitude': {
-                validators: {
-                    notEmpty: {
-                        message: "Please verify your location."
-                    }
-                }
-            }
+            // 'location': {
+            //     validators: {
+            //         identical: {
+            //             field: 'location',
+            //             message: 'Your location has not been verified.'
+            //         }
+            //     }
+            // },
         }
     })
     .on('success.form.bv', function(e) {
