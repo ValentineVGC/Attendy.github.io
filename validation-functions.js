@@ -60,7 +60,7 @@ $(document).ready(function() {
                 }
             },
             team: {
-                message: 'Team is not valid.",
+                message: 'Team is not valid.',
                 validators: {
                     notEmpty: {
                         message: 'Team is required and cannot be empty.'
