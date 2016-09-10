@@ -137,8 +137,10 @@ function onGeoSuccess(event)
         }
         $('#location').text("Verified!");
     } else {
+        if ($('#location').hasClass("btn btn-success")) {
+            $("#location").removeClass("btn btn-success").addClass("btn btn-danger");
+        }
         $('#location').text("Try again");
-        $("#location").removeClass("btn btn-success").addClass("btn btn-danger");
     }
 }
 
