@@ -90,7 +90,7 @@
           <label class="col-lg-3 control-label" for="absent-members">Absent team members</label>
           <div class="col-lg-3 inputGroupContainer">
             <div class="input-group">
-                <textarea class="form-control" rows="4" cols="25" id="absent-members" name="Absent Members"></textarea>
+                <textarea class="form-control" rows="4" cols="20" id="absent-members" name="Absent Members"></textarea>
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@
                 <cfform action="gps2.cfm" method="post">
                      <input type="hidden" id="Latitude" name="Latitude" value="" readonly>
                      <input type="hidden" id="Longitude" name="Longitude" value="" readonly>
-                     <button type="button" class="btn btn-default" id="location"
+                     <button type="button" class="btn btn-default" name="location" id="location"
                       onclick="getLocationConstant()">Verify Location</button>
                 </cfform>
             </div>
