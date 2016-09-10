@@ -126,17 +126,16 @@ function getLocationConstant()
 // If we have a successful location update
 function onGeoSuccess(event)
 {
-    $('#location').text("Verified!");
-    $("#location").removeClass("btn btn-default").addClass("btn btn-primary disabled")
-    $('#location').append($('<span></span>').addClass('glyphicon glyphicon-ok'));
     document.getElementById("Latitude").value =  event.coords.latitude;
     document.getElementById("Longitude").value = event.coords.longitude;
-    // if (event.coords.latitude > 37.874224 && event.coords.latitude < 37.873612
-    //     && event.coords.longitude > -122.255465 && event.coords.longitude < -122.256722) {
-    //     $('#location').text("Verified!");
-    // } else {
-    //     $('#location').text("Verify Location");
-    // }
+    if (event.coords.latitude > 37.874224 && event.coords.latitude < 37.873612
+        && event.coords.longitude > -122.255465 && event.coords.longitude < -122.256722) {
+        $('#location').text("Verified!");
+        $("#location").removeClass("btn btn-success").addClass("btn btn-success disabled");
+    } else {
+        $('#location').text("Try again");
+        $("#location").removeClass("btn btn-success").addClass("btn btn-failure");
+    }
 }
 
 // If something has gone wrong with the geolocation request
