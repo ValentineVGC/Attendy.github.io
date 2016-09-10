@@ -21,7 +21,7 @@ label {
     width: 140px;
 }
 
-label, textarea {
+textarea {
     vertical-align: middle;
 }
 
