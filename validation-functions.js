@@ -68,7 +68,7 @@ $(document).ready(function() {
                     stringLength: {
                         min: 1,
                         max: 2,
-                        message: 'Last Name must be more than 1 and less than 30 characters long'
+                        message: 'Please enter a team between 1 and 19.'
                     },
                     regexp: {
                         regexp: /^[0-9]*$/,
