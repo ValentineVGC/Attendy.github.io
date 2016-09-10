@@ -6,13 +6,13 @@ $(document).ready(function() {
             valid: 'glyphicon glyphicon-ok',
             invalid: 'glyphicon glyphicon-remove',
             validating: 'glyphicon glyphicon-refresh'
-        },        
+        },
         fields: {
             firstName: {
-             message: 'The first name is not valid',
+             message: 'First name is not valid.',
                 validators: {
                     notEmpty: {
-                        message: 'The first name is required and cannot be empty'
+                        message: 'First name is required and cannot be empty.'
                     },
                     stringLength: {
                         min: 1,
@@ -21,15 +21,15 @@ $(document).ready(function() {
                     },
                     regexp: {
                         regexp: /^[A-z]+$/,
-                        message: 'The first name can only accept alphabetical input'
+                        message: 'First names can only consist of alphabetical characters.'
                     },
                 }
             },
             lastName: {
-                message: 'Last Name is not valid',
+                message: 'Last Name is not valid.',
                 validators: {
                     notEmpty: {
-                        message: 'Last Name is required and cannot be empty'
+                        message: 'Last name is required and cannot be empty.'
                     },
                     stringLength: {
                         min: 1,
@@ -38,7 +38,41 @@ $(document).ready(function() {
                     },
                     regexp: {
                         regexp: /^[A-z]+$/,
-                        message: 'Last Names can only consist of alphabetical characters'
+                        message: 'Last names can only consist of alphabetical characters.'
+                    },
+                }
+            },
+            SID: {
+                message: 'SID is not valid.',
+                validators: {
+                    notEmpty: {
+                        message: 'SID is required and cannot be empty.'
+                    },
+                    stringLength: {
+                        min: 8,
+                        max: 11,
+                        message: 'Please enter a valid student ID number.'
+                    },
+                    regexp: {
+                        regexp: /^[0-9]*$/,
+                        message: 'Student ID numbers can only consist of numbers.'
+                    },
+                }
+            },
+            team: {
+                message: 'Team is not valid.",
+                validators: {
+                    notEmpty: {
+                        message: 'Team is required and cannot be empty.'
+                    },
+                    stringLength: {
+                        min: 1,
+                        max: 2,
+                        message: 'Last Name must be more than 1 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[0-9]*$/,
+                        message: 'Team number can only consist of numbers.'
                     },
                 }
             },
@@ -58,7 +92,7 @@ $(document).ready(function() {
         // Use Ajax to submit form data
         var url = 'https://script.google.com/macros/s/AKfycbwk7ww8JrinFfcG0Bc8b7HgdIsXQyGloeHtjK63O0VNQyl_964/exec';
         var redirectUrl = 'success-page.html';
-        // show the loading 
+        // show the loading
         $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
         var jqxhr = $.post(url, $form.serialize(), function(data) {
             console.log("Success! Data: " + data.statusText);
@@ -69,7 +103,7 @@ $(document).ready(function() {
                 // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
                 if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
                     //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
-                    $(location).attr('href',redirectUrl);                
+                    $(location).attr('href',redirectUrl);
                 }
             });
     });
