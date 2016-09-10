@@ -85,14 +85,6 @@ $(document).ready(function() {
                     },
                 }
             },
-            // 'location': {
-            //     validators: {
-            //         identical: {
-            //             field: 'location',
-            //             message: 'Your location has not been verified.'
-            //         }
-            //     }
-            // },
         }
     })
     .on('success.form.bv', function(e) {
