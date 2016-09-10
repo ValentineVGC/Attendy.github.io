@@ -138,6 +138,7 @@ function onGeoSuccess(event)
             $("#location").removeClass("btn btn-danger").addClass("btn btn-success disabled");
         }
         $('#location').text("Verified!");
+        document.getElementById("stanleyLabel").style.display = 'block';
         document.getElementById("stanleyLabel").style.color = 'green';
         document.getElementById("stanleyLabel").innerHTML = 'You are in Stanley 106.';
     } else {
