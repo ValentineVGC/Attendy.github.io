@@ -37,7 +37,7 @@ textarea {
 }
 
 .input-group {
-  display: block;
+  display: inherit;
 }
 
 #stanleyLabel {
