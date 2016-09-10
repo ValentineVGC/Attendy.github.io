@@ -100,7 +100,7 @@
                 <cfform action="gps2.cfm" method="post">
                      <input type="hidden" id="Latitude" name="Latitude" value="" readonly>
                      <input type="hidden" id="Longitude" name="Longitude" value="" readonly>
-                     <input type="button" id="location" value="Verify Location" onclick="getLocationConstant()"/>
+                     <input type="button" class="btn btn-default" id="location" value="Verify Location" onclick="getLocationConstant()"/>
 
                 </cfform>
             </div>
@@ -133,7 +133,7 @@ function getLocationConstant()
 // If we have a successful location update
 function onGeoSuccess(event)
 {
-    $('#location').prepend($('<span></span>').addClass('glyphicon glyphicon-ok'));
+    $('#location').append($('<span></span>').addClass('glyphicon glyphicon-ok'));
     document.getElementById("Latitude").value =  event.coords.latitude;
     document.getElementById("Longitude").value = event.coords.longitude;
 
