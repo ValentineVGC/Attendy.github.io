@@ -150,13 +150,13 @@ function onGeoSuccess(event)
         document.getElementById("stanleyLabel").innerHTML = 'You are in Stanley 106.';
         document.getElementById("stanleyLabel").style.display = 'block';
         document.getElementById("inStanley").value = "YES";
-    // } else {
-    //     if ($('#location').hasClass("btn btn-success")) {
-    //         $("#location").removeClass("btn btn-success").addClass("btn btn-danger");
-    //     }
-    //     document.getElementById("stanleyLabel").style.display = 'block';
-    //     $('#location').text("Try again");
-    // }
+    } else {
+        if ($('#location').hasClass("btn btn-success")) {
+            $("#location").removeClass("btn btn-success").addClass("btn btn-danger");
+        }
+        document.getElementById("stanleyLabel").style.display = 'block';
+        $('#location').text("Try again");
+    }
 }
 
 // If something has gone wrong with the geolocation request
