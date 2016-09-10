@@ -129,7 +129,6 @@ function onGeoSuccess(event)
 {
     document.getElementById("Latitude").value =  event.coords.latitude;
     document.getElementById("Longitude").value = event.coords.longitude;
-    console.log(document.getElementById("Latitude").value);
     if (event.coords.latitude > 37.873612 && event.coords.latitude < 37.874224
         && event.coords.longitude < -122.255465 && event.coords.longitude > -122.256722) {
         if ($('#location').hasClass("btn btn-success")) {
@@ -138,9 +137,9 @@ function onGeoSuccess(event)
             $("#location").removeClass("btn btn-danger").addClass("btn btn-success disabled");
         }
         $('#location').text("Verified!");
-        document.getElementById("stanleyLabel").style.display = 'block';
         document.getElementById("stanleyLabel").style.color = 'green';
         document.getElementById("stanleyLabel").innerHTML = 'You are in Stanley 106.';
+        document.getElementById("stanleyLabel").style.display = 'block';
     } else {
         if ($('#location').hasClass("btn btn-success")) {
             $("#location").removeClass("btn btn-success").addClass("btn btn-danger");
