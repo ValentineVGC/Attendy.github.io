@@ -115,8 +115,7 @@ $(document).ready(function() {
         var url = 'https://script.google.com/macros/s/AKfycbwk7ww8JrinFfcG0Bc8b7HgdIsXQyGloeHtjK63O0VNQyl_964/exec';
         var redirectUrl = 'success-page.html';
         // show the loading
-        $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
-        $('#location').prepend($('<span></span>').addClass('glyphicon glyphicon-ok'));
+        $('#postForm').append($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
         console.log($form.serialize());
         var jqxhr = $.post(url, $form.serialize(), function(data) {
             console.log("Success! Data: " + data.statusText);
