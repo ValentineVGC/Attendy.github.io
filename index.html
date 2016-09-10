@@ -49,61 +49,61 @@
     </div>
   </div>
   <hr>
-  <form class="form-horizontal" role="form" id="test-form">
-    <div class="form-group">
-      <label class="col-lg-3 control-label">First Name</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group">
-          <input type="text" class="form-control" name="firstName"/>
+    <form class="form-horizontal" role="form" id="test-form">
+        <div class="form-group">
+          <label class="col-lg-3 control-label">First Name</label>
+          <div class="col-lg-3 inputGroupContainer">
+            <div class="input-group">
+              <input type="text" class="form-control" name="firstName"/>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Last Name</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group">
-          <input type="text" class="form-control" name="lastName"/>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Last Name</label>
+          <div class="col-lg-3 inputGroupContainer">
+            <div class="input-group">
+              <input type="text" class="form-control" name="lastName"/>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="form-group">
-      <label class="col-lg-3 control-label">SID</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group">
-          <input type="number" class="form-control" name="SID"/>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">SID</label>
+          <div class="col-lg-3 inputGroupContainer">
+            <div class="input-group">
+              <input type="number" class="form-control" name="SID"/>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Team #</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group">
-          <input type="number" class="form-control" name="team"/>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Team #</label>
+          <div class="col-lg-3 inputGroupContainer">
+            <div class="input-group">
+              <input type="number" class="form-control" name="team"/>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="form-group">
-      <label for="absent-members">Absent team members</label>
-      <textarea rows="4" cols="25" id="absent-members" name="absent-members"></textarea>
-    </div>
-
-    <div class="form-group">
-         <cfform action="gps2.cfm" method="post">
-             <input type="hidden" id="Latitude" name="Latitude" value="" readonly>
-             <input type="hidden" id="Longitude" name="Longitude" value="" readonly>
-             <input type="button" value="Get Location" onclick="getLocationConstant()"/>
-         </cfform>
-    </div>
-
-    <div class="form-group">
-        <div class="col-lg-9 col-lg-offset-3">
-            <button type="submit" class="btn btn-default" id="postForm">Submit</button>
+        <div class="form-group">
+          <label for="absent-members">Absent team members</label>
+          <textarea rows="4" cols="25" id="absent-members" name="absent-members"></textarea>
         </div>
-    </div>
+
+        <div class="form-group">
+             <cfform action="gps2.cfm" method="post">
+                 <input type="hidden" id="Latitude" name="Latitude" value="" readonly>
+                 <input type="hidden" id="Longitude" name="Longitude" value="" readonly>
+                 <input type="button" value="Get Location" onclick="getLocationConstant()"/>
+             </cfform>
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-9 col-lg-offset-3">
+                <button type="submit" class="btn btn-default" id="postForm">Submit</button>
+            </div>
+        </div>
 
     </form>
 

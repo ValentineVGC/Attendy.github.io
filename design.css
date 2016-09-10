@@ -15,7 +15,7 @@
   opacity: 0.5;       /* Likely future */
 }
 
-label {
+/*label {
     display: inline-block;
     width: 100px;
 }
@@ -33,11 +33,4 @@ input {
     margin-left: auto;
     margin-right: auto;
 }
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
-footer {
-    margin-bottom: 0px;
-}
+*/
