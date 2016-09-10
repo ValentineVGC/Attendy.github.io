@@ -25,7 +25,7 @@ $(document).ready(function() {
                     },
                 }
             },
-            lastName: {
+            'Last Name': {
                 message: 'Last Name is not valid.',
                 validators: {
                     notEmpty: {
@@ -42,7 +42,7 @@ $(document).ready(function() {
                     },
                 }
             },
-            SID: {
+            'SID': {
                 message: 'SID is not valid.',
                 validators: {
                     notEmpty: {
@@ -59,7 +59,7 @@ $(document).ready(function() {
                     },
                 }
             },
-            team: {
+            'Team': {
                 message: 'Team is not valid.',
                 validators: {
                     notEmpty: {
@@ -73,6 +73,15 @@ $(document).ready(function() {
                     regexp: {
                         regexp: /^[0-9]*$/,
                         message: 'Team number can only consist of numbers.'
+                    },
+                }
+            },
+            'Absent Members': {
+                validators: {
+                    stringLength: {
+                        min: 0,
+                        max: 100,
+                        message: 'Exceeded maximum length.'
                     },
                 }
             },
