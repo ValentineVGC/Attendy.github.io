@@ -22,6 +22,10 @@ label {
     vertical-align: middle;
 }
 
+#falsifyingLabel {
+  width: 100%;
+}
+
 textarea {
     vertical-align: middle;
 }
