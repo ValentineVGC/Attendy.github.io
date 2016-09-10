@@ -15,10 +15,9 @@
   opacity: 0.5;       /* Likely future */
 }
 
-/*label {
+label {
     display: inline-block;
-    width: 100px;
-}*/
+}
 
 label, textarea {
     vertical-align: middle;
