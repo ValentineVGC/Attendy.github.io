@@ -113,6 +113,10 @@ function onGeoError(event)
 
 <br>
  <cfform action="gps2.cfm" method="post">
+ Latitude: <input type="hidden" id="Latitude" name="Latitude" value="" readonly>
+ <br><br>
+ Longitude: <input type="hidden" id="Longitude" name="Longitude" value="" readonly>
+ <br><br>
  <input type="button" value="Get Location" onclick="getLocationConstant()"/>
  <br><br>
  </cfform>
