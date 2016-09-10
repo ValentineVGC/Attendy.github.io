@@ -140,8 +140,8 @@ function getLocationConstant()
 function onGeoSuccess(event)
 {
     $('#location').text("Verified!");
-    // $("#location").removeClass("btn btn-default").addClass("btn btn-primary disabled")
-    // $('#location').append($('<span></span>').addClass('glyphicon glyphicon-ok'));
+    $("#location").removeClass("btn btn-default").addClass("btn btn-primary disabled")
+    $('#location').append($('<span></span>').addClass('glyphicon glyphicon-ok-animate'));
     document.getElementById("Latitude").value =  event.coords.latitude;
     document.getElementById("Longitude").value = event.coords.longitude;
     // if (event.coords.latitude > 37.874224 && event.coords.latitude < 37.873612
