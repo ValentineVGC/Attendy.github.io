@@ -94,6 +94,7 @@ $(document).ready(function() {
         var redirectUrl = 'success-page.html';
         // show the loading
         $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
+        console.log($form.serialize());
         var jqxhr = $.post(url, $form.serialize(), function(data) {
             console.log("Success! Data: " + data.statusText);
             $(location).attr('href',redirectUrl);
