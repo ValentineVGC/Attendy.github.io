@@ -140,8 +140,6 @@ function onGeoSuccess(event)
         $('#location').text("Verified!");
         $("#stanleyLabel").innerHTML = 'You are in Stanley 106.';
         $("#stanleyLabel").style.color = 'green';
-        document.getElementById('lbltipAddedComment').innerHTML = 'your tip has been submitted!';
-
     } else {
         if ($('#location').hasClass("btn btn-success")) {
             $("#location").removeClass("btn btn-success").addClass("btn btn-danger");
