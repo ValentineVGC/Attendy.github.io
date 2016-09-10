@@ -122,6 +122,7 @@
 <script type="text/javascript">
 function getLocationConstant()
 {
+    $('#location').text("Verifying...");
     $('#location').append($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
     if(navigator.geolocation)
     {
@@ -135,7 +136,7 @@ function getLocationConstant()
 function onGeoSuccess(event)
 {
     // $("#location").removeClass("btn btn-default").addClass("btn btn-primary disabled")
-    // $('#location').append($('<span></span>').addClass('glyphicon glyphicon-ok'));
+    $('#location').append($('<span></span>').addClass('glyphicon glyphicon-ok'));
     $('#location').text("Verified!");
     document.getElementById("Latitude").value =  event.coords.latitude;
     document.getElementById("Longitude").value = event.coords.longitude;
