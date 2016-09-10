@@ -36,6 +36,13 @@ textarea {
     margin-right: auto;
 }
 
+#location {
+  display: inherit;
+}
+
+#postForm {
+  display: inherit;
+}
 /*.input-group {
   display: inherit;
 }*/
