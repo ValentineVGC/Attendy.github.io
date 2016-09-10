@@ -19,6 +19,7 @@ label {
     display: inline-block;
     float: left;
     width: 140px;
+    vertical-align: middle;
 }
 
 textarea {
