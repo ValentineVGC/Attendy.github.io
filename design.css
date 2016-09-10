@@ -17,7 +17,7 @@
 
 label {
     display: inline-block;
-    float: inherit;
+    float: left;
 }
 
 label, textarea {
