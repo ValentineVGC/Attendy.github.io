@@ -85,6 +85,14 @@ $(document).ready(function() {
                     },
                 }
             },
+            'checkbox': {
+                validators: {
+                    choice: {
+                        min: 1,
+                        message: 'Please read the policy and agree to the terms.'
+                    }
+                }
+            }
         }
     })
     .on('success.form.bv', function(e) {
