@@ -133,6 +133,7 @@ function getLocationConstant()
 // If we have a successful location update
 function onGeoSuccess(event)
 {
+    $("location").prop("disabled", true);
     $('#location span').addClass('glyphicon glyphicon-ok');
     $('#location span').text("Verified!");
     document.getElementById("Latitude").value =  event.coords.latitude;
