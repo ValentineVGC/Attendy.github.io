@@ -138,8 +138,8 @@ function onGeoSuccess(event)
 {
     document.getElementById("Latitude").value =  event.coords.latitude;
     document.getElementById("Longitude").value = event.coords.longitude;
-    // if (event.coords.latitude > 37.873612 && event.coords.latitude < 37.874224
-    //     && event.coords.longitude < -122.255465 && event.coords.longitude > -122.256722) {
+    if (event.coords.latitude > 37.873612 && event.coords.latitude < 37.874224
+        && event.coords.longitude < -122.255465 && event.coords.longitude > -122.256722) {
         if ($('#location').hasClass("btn btn-success")) {
             $("#location").removeClass("btn btn-success").addClass("btn btn-success disabled");
         } else if ($('#location').hasClass("btn btn-danger")) {
