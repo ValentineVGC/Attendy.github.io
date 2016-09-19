@@ -25,6 +25,14 @@ label {
 #falsifyingLabel {
   width: 100%;
 }
+#prof {
+  width: 100%;
+}
+
+#ack {
+  width: 100%;
+  color: grey;
+}
 
 textarea {
     vertical-align: middle;
