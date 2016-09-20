@@ -11,7 +11,7 @@ Created by: William Bontrager | http://www.bontragerconnection.com/ */
 // 1. What URL shall the browser be redirected 
 //    to if a cookie was previously set?
 
-var RedirectURL = "index2.html";
+var RedirectURL = "success-page.html";
 
 // 2. How many days shall the cookie live in 
 //    the visitor's browser (0 means remove 
